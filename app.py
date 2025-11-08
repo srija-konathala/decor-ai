@@ -5,8 +5,8 @@ st.title("Room Decoration App")
 
 # --- User Inputs ---
 uploaded_file = st.file_uploader("Upload room photo", type=["jpg","png"])
-room_size = st.text_input("Room Size")
-occasion = st.selectbox("Occasion / Theme", ["Birthday Party", "Wedding", "Cozy Dinner"])
+room_size = st.text_input("Room Size (feet)")
+occasion = st.selectbox("Occasion / Theme", ["Birthday Party", "Graduation Party", "Baby Shower"])
 style = st.selectbox("Style Preference", ["Modern", "Boho", "Minimalist", "Cozy", "Elegant"])
 materials = st.multiselect("Available Materials", ["Ribbons", "Balloons", "Lights", "Posters", "Flowers", "Cushions"])
 budget = st.text_input("Budget (USD)")
